@@ -36,7 +36,7 @@ public class ContactDAO
 			preparedStatement.setString(1, contM.getNom_cont());
 			preparedStatement.setString(2, contM.getPrenom_cont());
 			preparedStatement.setString(3, contM.getMail_cont());
-			preparedStatement.setString(1, contM.getTel_cont());
+			preparedStatement.setString(4, contM.getTel_cont());
 			preparedStatement.executeUpdate();
 		}
 		catch(SQLException ex)
