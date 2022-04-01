@@ -10,8 +10,8 @@ import java.util.*;
 public class MaConnexion
 {
 	private static String url = "jdbc:mysql://localhost:8889/BdContact?useSSL=true&serverTimezone=UTC";
-	private static String login = "alexandreleuthreau";
-	private static String password = "O-t-h-@-l-@24";
+	private static String login = "root";
+	private static String password = "";
 	
 	private static Connection connexion = null;
 	
