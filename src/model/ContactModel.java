@@ -74,6 +74,4 @@ public class ContactModel
 	{
 		return id_cont + " " + nom_cont + " " + prenom_cont + " " + mail_cont + " " + tel_cont;
 	}
-	
-	
 }
