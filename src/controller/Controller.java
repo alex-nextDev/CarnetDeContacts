@@ -1,11 +1,7 @@
 package controller;
 
-//import javax.swing.*
 import javax.swing.JList;
-
-
 import java.util.*;
-
 import model.ContactDAO;
 import model.ContactModel;
 import view.View;
