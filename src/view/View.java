@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.EventQueue;
+
 import java.util.ArrayList;
 
 import javax.swing.*;
@@ -11,8 +12,8 @@ import javax.swing.JTextField;
 import javax.swing.JList;
 import javax.swing.JScrollBar;
 import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+//import java.awt.event.ActionListener;
+//import java.awt.event.ActionEvent;
 import javax.swing.JPanel;
 import java.awt.Color;
 import javax.swing.border.LineBorder;
@@ -20,6 +21,8 @@ import javax.swing.text.JTextComponent;
 
 
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 public class View {
@@ -36,6 +39,7 @@ public class View {
 	private JButton btnDelete;
 	private JButton btnUpdate;
 	private JButton btnErase;
+	private JLabel idLabel;
 
 	
 
@@ -75,7 +79,7 @@ public class View {
 		frmMesContacts = new JFrame();
 		frmMesContacts.setFont(new Font("Helvetica", Font.BOLD, 14));
 		frmMesContacts.setTitle("MES CONTACTS");
-		frmMesContacts.setBounds(100, 100, 600, 500);
+		frmMesContacts.setBounds(100, 100, 637, 500);
 		frmMesContacts.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmMesContacts.getContentPane().setLayout(null);
 		lblNewLabel.setBounds(20, 17, 176, 16);
@@ -108,9 +112,9 @@ public class View {
 		lblNewLabel_5.setBounds(20, 180, 78, 16);
 		frmMesContacts.getContentPane().add(lblNewLabel_5);
 		
-		JLabel lblNewLabel_6 = new JLabel("---");
-		lblNewLabel_6.setBounds(101, 60, 61, 16);
-		frmMesContacts.getContentPane().add(lblNewLabel_6);
+		idLabel = new JLabel("---");
+		idLabel.setBounds(101, 60, 61, 16);
+		frmMesContacts.getContentPane().add(idLabel);
 		
 		textField = new JTextField();
 		textField.setBounds(101, 85, 151, 26);
@@ -133,36 +137,39 @@ public class View {
 		textField_3.setColumns(10);
 		
 		
-		JButton btnAjouter = new JButton("Add");
+		btnAjouter = new JButton("Add");
 		btnAjouter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
 			}
 		});
+		
 		btnAjouter.setBounds(20, 227, 117, 29);
 		frmMesContacts.getContentPane().add(btnAjouter);
 		
-		JButton btnDelete = new JButton("Delete");
+		btnDelete = new JButton("Delete");
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
+		
 		btnDelete.setBounds(135, 227, 117, 29);
 		frmMesContacts.getContentPane().add(btnDelete);
 		
-		JButton btnUpdate = new JButton("Update");
+		btnUpdate = new JButton("Update");
 		btnUpdate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
+		
 		btnUpdate.setBounds(20, 260, 117, 29);
 		frmMesContacts.getContentPane().add(btnUpdate);
 		
-		JButton btnErase = new JButton("Erase");
+		btnErase = new JButton("Erase");
 		btnErase.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
+	
 		btnErase.setBounds(135, 260, 117, 29);
 		frmMesContacts.getContentPane().add(btnErase);
 		
@@ -174,23 +181,21 @@ public class View {
 		
 		
 		
-		
-		
 		JLabel lblList = new JLabel("Contact List :");
 		lblList.setBounds(276, 17, 112, 16);
 		frmMesContacts.getContentPane().add(lblList);
 		
 		JScrollBar scrollBar = new JScrollBar();
-		scrollBar.setBounds(568, 60, 15, 380);
+		scrollBar.setBounds(605, 60, 15, 380);
 		frmMesContacts.getContentPane().add(scrollBar);
 		
-		 list = new JList();
-		list.setBounds(276, 60, 307, 380);
+		list = new JList();
+		list.setBounds(276, 60, 344, 380);
 		frmMesContacts.getContentPane().add(list);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBorder(new LineBorder(Color.GRAY, 1, true));
-		panel_1.setBounds(268, 42, 326, 409);
+		panel_1.setBounds(268, 42, 363, 409);
 		frmMesContacts.getContentPane().add(panel_1);
 	}
 
@@ -285,6 +290,12 @@ public class View {
 	public void setBtnErase(JButton btnErase) {
 		this.btnErase = btnErase;
 	}
-	
-	
+
+	public JLabel getIdLabel() {
+		return idLabel;
+	}
+
+	public void setIdLabel(JLabel idLabel) {
+		this.idLabel = idLabel;
+	}
 }
