@@ -2,14 +2,13 @@ package model;
 
 
 import java.io.*;
-
 import java.sql.*;
 import java.util.*;
 
 
 public class MaConnexion
 {
-	private static String url = "jdbc:mysql://localhost:8889/BdContact?useSSL=true&serverTimezone=UTC";
+	private static String url = "jdbc:mysql://localhost:3306/BdContact?useSSL=true&serverTimezone=UTC";
 	private static String login = "root";
 	private static String password = "";
 	
@@ -22,9 +21,9 @@ public class MaConnexion
 		
 		try
 		{
-			Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 			
-			connexion = DriverManager.getConnection(url, login, password);
+		connexion = DriverManager.getConnection(url, login, password);
 		}
 		catch(Exception e)
 		{
@@ -57,7 +56,7 @@ public class MaConnexion
 			catch(SQLException e)
 			{
 				e.printStackTrace();
-			}		
-		}	
+			}	
+		}		
 	}
 }
