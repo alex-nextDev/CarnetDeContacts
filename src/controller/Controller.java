@@ -46,12 +46,8 @@ public class Controller
 		vue.getBtnUpdate().addActionListener(ActionEvent -> modifierContact());
 		vue.getBtnDelete().addActionListener(ActionEvent -> supprimerContact());
 		//vue.getBtnErase().addActionListener(ActionEvent -> effacerContact());
-		
-		
 	}
-	
 
-	
 	private void ajouterContact()
 	{
 		String nom = vue.getTextField().getText();
