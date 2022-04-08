@@ -10,8 +10,6 @@ import view.View;
 
 public class Controller
 {
-	
-	
 	private ContactModel modele;
 	private View vue;
 	private ContactDAO contactDao;
