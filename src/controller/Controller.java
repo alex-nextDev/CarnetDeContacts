@@ -33,8 +33,6 @@ public class Controller
 		arrayContacts = contactDao.getAllContacts();
 		vue.getList().setListData(arrayContacts.toArray());
 		initController();
-		
-		
 	}
 	
 	
@@ -123,8 +121,6 @@ public class Controller
 		String mail = vue.getTextField_2().getText();
 		String tel = vue.getTextField_3().getText();
 
-		
-	
 		modele = new ContactModel();
 		modele.setId_cont(id__);
 		modele.setNom_cont(nom);
@@ -141,5 +137,4 @@ public class Controller
 		vue.getLblNewLabel().setText("contact supprimé");
 		
 	}
-	
 }
