@@ -1,7 +1,6 @@
 package model;
 
 import java.sql.*;
-
 import controller.Controller;
 import java.text.*;
 import java.util.*;
@@ -9,7 +8,7 @@ import java.util.*;
 
 /*
  * Connexion
- * Methodes pour envoyer et recupérer reponse
+ * Methodes pour envoyer et recupérer reponses
  */
 
 public class ContactDAO
